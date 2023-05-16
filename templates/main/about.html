@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Chuks{% endblock %}
+{% block content %}
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <div class="col-lg-12">
+                        <div class="slider_text text-center about_slide">
+                            <h3>Hey! I am Chuks Edwin <br>
+                                    Creative Minds director based  <br>
+                                    in Nigeria</h3>
+                        <a class="boxed-btn3-line" href="{% url 'works' %}">View Works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- About me starts here -->
+    {% include 'main/snippets/about_me.html' %}
+    <!-- Ends here -->
+
+        <!-- testimonial_area  -->
+        {% include 'main/snippets/testimonial.html' %}
+        <!-- /testimonial_area  -->
+        
+{% endblock %}

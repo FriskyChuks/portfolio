@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Chuks{% endblock %}
+{% block content %}
+
+    <!-- slider_area_start -->
+    <div class="slider_area" style="padding-top: 0px;">
+        <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <div class="col-lg-9">
+                        <div class="slider_text">
+                            <h3>Chuks Edwin<br>
+                                <span style="font-size: large;"><i>CEO</i></span>
+                                <span>Hero-Tech.</span>
+                            </h3>
+                        <a class="boxed-btn3-line" href="#">View Works</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my_img d-none d-lg-block">
+                        <img src="{% static 'assets/img/about/DP_no_bg.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- About me -->
+    {% include 'main/snippets/about_me.html' %}
+    <!-- About me ends here -->
+
+    <!-- service_area start  -->
+    {% include 'main/snippets/service_temp.html' %}
+    <!-- service_area end  -->
+
+    <!-- works_area start  -->
+    {% include 'main/snippets/works_temp.html' %}
+    <!-- gallery_area end  -->
+
+    <!-- testimonial_area  -->
+    {% include 'main/snippets/testimonial.html' %}
+    <!-- /testimonial_area  -->
+        
+{% endblock %}
