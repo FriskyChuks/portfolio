@@ -10,7 +10,7 @@ SECRET_KEY = 'django-insecure-2%)k0($x(bx0tgv@mnwsu01ned!7hce##nl_z!8$nz(6u11xkv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -59,6 +59,15 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+DATABASE_URL = 'postgresql://postgres:gToOXSTUwpyH11qiP6bp@containers-us-west-99.railway.app:6492/railway'
 
 DATABASES = {
     'default': {
