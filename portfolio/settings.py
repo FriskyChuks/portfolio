@@ -67,15 +67,6 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #     }
 # }
 
-DATABASE_URL = 'postgresql://postgres:gToOXSTUwpyH11qiP6bp@containers-us-west-99.railway.app:6492/railway'
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
